@@ -14,11 +14,9 @@ function TaskList() {
       task.text= task.text.trim();
       const updatedTasks = [task, ...tasks];
       setTasks(updatedTasks);
-    }
+    };
     // console.log('Task Added');
     // console.log(task);
-
-   
     }
     const deleteTask = id => {
     const updatedTasks = tasks.filter(task => task.id !== id);
@@ -34,7 +32,7 @@ function TaskList() {
      });
 
      setTasks(updatedTasks);
-   }
+   };
 
   return (
     <>

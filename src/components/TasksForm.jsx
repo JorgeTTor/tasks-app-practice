@@ -9,7 +9,7 @@ function TaskForm(props){
   const handleChange = e => {
     setInput(e.target.value);
     console.log(e.target.value);
-  }
+  };
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -19,9 +19,9 @@ function TaskForm(props){
       id: uuidv4(),
       text: input,
       completed: false
-    }
+    };
    props.onSubmit(newTask);
-  }
+  };
 
   return (
     <form className="task-form"
