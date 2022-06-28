@@ -19,11 +19,11 @@ Colores */
   
 }
 .task-container:nth-child(3n + 2) {
-  background-color: #2a2a40;
+  background-color: #252563;
 
 }
 .task-container:nth-child(3n + 3) {
-  background-color: #3b3b4f;
+  background-color: #6c6ca1;
 
 }
 
@@ -45,8 +45,9 @@ Colores */
 
 /* }Tasks completed */
 
-.task-container .completed {
+.task-container.completed {
   background-color: #5a01a7;
   text-decoration: line-through;
+
 }
 

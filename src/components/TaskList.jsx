@@ -28,13 +28,13 @@ function TaskList() {
    const completeTask = id => {
      const updatedTasks = tasks.map(task => {
        if (task.id === id){
-         completed.task = !task.completed;
+         task.completed = !task.completed;
        }
        return task;
      });
+
      setTasks(updatedTasks);
    }
-
 
   return (
     <>
@@ -47,8 +47,8 @@ function TaskList() {
             key={task.id}
             id={task.id}
             text={task.text}
-            completed={task.completed}
-            completeTask={completeTask}
+            completed = { task.completed }
+            completeTask = { completeTask }
             deleteTask = { deleteTask }
         
           />
